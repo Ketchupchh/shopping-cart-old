@@ -41,8 +41,7 @@ export default function Game({
   gameData,
 }: InferGetStaticPropsType<typeof getStaticProps>) : JSX.Element
 {
-
-  return gameData ? (
+  return gameData ? ( 
     <>
       <MainContainer> 
         <GameView gameData={gameData}/>

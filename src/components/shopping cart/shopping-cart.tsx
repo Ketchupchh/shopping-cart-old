@@ -58,8 +58,8 @@ export function ShoppingCart({
                                     {cartItems.length >= 1 ? (
                                         <>
                                             <div className="h-full overflow-y-auto">
-                                                {cartItems.map((item, index) => (
-                                                    <div>
+                                                {cartItems.map((item) => (
+                                                    <div key={item.item_id}>
                                                         <div className="flex flex-row items-center mt-2">
                                                             <button
                                                                 onClick={() => removeFromCart(item.item_id)}
